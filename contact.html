@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Yuvraj Real Estates</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Yuvraj Real Estates</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+
+            <span>
+                <i class="fa-solid fa-house"></i>
+                YUVRAJ REAL ESTATES
+            </span>
+
+            <h1>Contact Us</h1>
+
+            <p>
+                We're here to help you find the right property.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="new-contact-section">
+
+        <!-- LEFT -->
+
+        <div class="new-contact-info">
+
+            <span class="contact-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Let's find your
+                <span>perfect property.</span>
+            </h2>
+
+            <p class="contact-intro">
+                Have a question about a property or looking for
+                your next home? Our team is ready to help you.
+                Get in touch with us today.
+            </p>
+
+
+            <!-- OFFICE -->
+
+            <div class="new-contact-item">
+
+                <div class="new-contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h4>Our Office</h4>
+                    <p>
+                        Dwarka Expressway,<br>
+                        Gurugram, Haryana, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="new-contact-item">
+
+                <div class="new-contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                    <h4>Call Us</h4>
+                    <p>
+                        +91 9999993238<br>
+                        +91 9717485456
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="new-contact-item">
+
+                <div class="new-contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h4>Email Us</h4>
+                    <p>
+                        yuvraj.infra2330@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="new-contact-item">
+
+                <div class="new-contact-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div>
+                    <h4>Instagram</h4>
+                    <p>
+                        yuvraj.infra9876
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT FORM -->
+
+        <div class="new-contact-form">
+
+            <div class="form-heading">
+
+                <span>
+                    HAVE A QUESTION?
+                </span>
+
+                <h3>
+                    Send Us a Message
+                </h3>
+
+                <p>
+                    Fill out the form below and we'll get back
+                    to you shortly.
+                </p>
+
+            </div>
+
+
+<form id="contactForm">
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+        </div>
+
+        <div class="form-group">
+
+            <label>Service</label>
+
+            <select id="service" required>
+
+                <option value="">Select Service</option>
+
+                <option value="Buy Property">
+                    Buy Property
+                </option>
+
+                <option value="Sell Property">
+                    Sell Property
+                </option>
+
+                <option value="Rent Property">
+                    Rent Property
+                </option>
+
+                <option value="Property Consultation">
+                    Property Consultation
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Your Message</label>
+
+        <textarea
+            id="message"
+            placeholder="Tell us how we can help you..."
+            rows="6"
+            required
+        ></textarea>
+
+    </div>
+
+
+    <button type="submit" class="instagram-btn">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        Message us on Instagram
+
+    </button>
+
+</form>
+
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+
+    // Create Instagram DM message
+    const dmMessage =
+`Hello Yuvraj Real Estates,
+
+I would like to enquire about a property.
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+
+Message:
+${message}
+
+Thank you.`;
+
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(dmMessage);
+
+
+    // Open Instagram DM
+    const instagramURL =
+        `https://ig.me/m/yuvraj.infra9876?text=${encodedMessage}`;
+
+
+    window.open(instagramURL, "_blank");
+
+});
+
+</script>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-bottom">
+
+            © 2026 Yuvraj Real Estates.
+            All rights reserved.
+
+            <p>
+                Find your dream home with Yuvraj Real Estates.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
